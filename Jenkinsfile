@@ -5,7 +5,7 @@ pipeline {
         }
     }
     stages {
-        stage {
+        stage ('index deploy'){
             steps {
                 sh "yum install httpd -y"
                 sh "service httpd start"
